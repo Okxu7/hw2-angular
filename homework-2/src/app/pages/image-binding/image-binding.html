@@ -1,0 +1,18 @@
+<p>image-binding works!</p>
+
+<!-- правило:
+Є слово signal(...) у .ts ➔ ставимо () у .html (imageUrl2()).
+Немає слова signal у .ts ➔ не ставимо () у .html (imageUrl2).  -->
+
+<h2> змінна</h2>
+
+<img [src]="imageUrl1">
+
+<hr>
+<img [src]="imageUrl11">
+
+<hr><hr>
+<h2>сигнал</h2>
+<img [src]="imageUrl2()">
+ <hr>
+ <img [src]="imageUrl22()">

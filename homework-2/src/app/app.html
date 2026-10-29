@@ -1,0 +1,10 @@
+<nav class="navbar">
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Головна (Завдання 1)</a>
+  <a routerLink="/image" routerLinkActive="active">Датабайдинг картинки (Завдання 2)</a>
+  <a routerLink="/slider" routerLinkActive="active">Слайдер (Завдання 3–4)</a>
+</nav>
+
+<main class="container">
+  <!-- Сюди Angular автоматично підставляє компонент активного маршруту -->
+  <router-outlet />
+</main>

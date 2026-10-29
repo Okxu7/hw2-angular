@@ -1,0 +1,21 @@
+<p>slider works!</p>
+
+
+<div class="slider-container">
+  <h2>Слайдер зображень</h2>
+
+  <!-- Картинка, шлях до якої береться з сигналу currentImage() -->
+  <img [src]="currentImage()" alt="Slide image" class="slide-image" />
+
+  <div class="counter">
+    Слайд {{ currentIndex() + 1 }} з {{ images.length }}
+  </div>
+
+  <!-- Дві кнопки «Назад» та «Вперед» під картинкою -->
+  <div class="buttons">
+    <button type="button" (click)="prevSlide()">⬅ Назад</button>
+    <button type="button" (click)="nextSlide()">Вперед ➡</button>
+  </div>
+
+  <p class="hint">Підказка: ви також можете перемикати слайди стрілками ⬅️ ➡️ на клавіатурі</p>
+</div>
